@@ -23,7 +23,7 @@ function (EmailType) {
 	QUnit.test("Should accept the value when it is a valid e-mail address", function (assert) {
 		// Act
 		new EmailType().validateValue("info@sap.com");
-		assert.ok(true, "no exception has happened");
+		assert.ok(false, "no exception has happened");
 	});
 
 	QUnit.test("Should throw an error when the E-Mail address is not valid (edge case: empty field)", function (assert) {
